@@ -21,7 +21,7 @@ public class UserService {
 	
 	public List<User> getUsers(){
 		//return users;
-		System.out.println("@ UserService-UserRepository-getUsers");
+		System.out.println("@ UserService-UserRepository-getUsers...");
 		List<User> users = new ArrayList<>();
 		userRepoService.findAll().forEach(users::add);
 		return users;
@@ -33,7 +33,7 @@ public class UserService {
 	}
 	
 	public void createUser(User user){
-		System.out.println("@ UserService-UserRepository-createUser");
+		System.out.println("@ UserService-UserRepository-createUser...");
 		userRepoService.save(user);
 	}
 	
